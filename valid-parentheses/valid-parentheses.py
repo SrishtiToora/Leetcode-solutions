@@ -9,7 +9,7 @@ class Solution:
             elif i in close: 
                 pos = close.index(i) 
                 if ((len(stack) > 0) and
-                    (openlist[pos] == stack[len(stack)-1])): 
+                    (openlist[pos] == stack[-1])): 
                     stack.pop() 
                 else: 
                     return False
